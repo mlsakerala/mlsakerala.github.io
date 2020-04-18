@@ -1,0 +1,221 @@
+*{
+	margin 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.leader{
+	overflow: hidden;
+	text-align: center;
+	padding: 60px;
+	margin: auto;
+	border-bottom: 3px solid #f1f1f1;
+	width: 100%;
+}
+
+.leader a{
+	color: black;
+}
+
+.leader a:hover{
+	color: #3487E6;
+}
+
+.leader a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+
+}
+
+.leader #img1{
+	display: inline-block;
+	margin: 0 30px;
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 50%;
+	align: center;
+
+}
+.leader a:hover > img{
+	filter: none;
+
+}
+
+.leader p{
+	font-family: arial;
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+.leader1{
+	float: center;
+}
+
+.leader1 h3{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: 100;
+	color:#A9A9A9
+}
+
+
+
+
+
+
+
+
+
+
+.deen{
+	overflow: hidden;
+	text-align: center;
+	padding: 20pt;
+	margin: auto;
+	border-bottom: 3px solid #f1f1f1;
+	width: auto;
+
+}
+
+
+.deen a{
+	color: black;
+}
+
+.deen a:hover{
+	color: #3487E6;
+}
+
+
+.deen1{
+	float: left;
+}
+.deen2{
+	float: right;
+}
+
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	margin-bottom: 40px;
+}
+.deen a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+
+}
+
+.deen #img2{
+	display: inline-block;
+	margin: 0 100px;
+	width: 180px;
+	height: 180px;
+	overflow: hidden;
+	border-radius: 50%;
+
+}
+.deen a:hover > img{
+	filter: none;
+
+}
+
+.deen p{
+	font-family: arial-black;
+	font-size: 30px;
+	font-family: arial
+	
+}
+
+.deen1 p{
+	 margin-bottom: 5px;
+	 font-family: arial
+}
+.deen1 h3{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: 100;
+	color:#A9A9A9
+}
+
+.deen2 p{
+	margin-bottom: 5px;
+	font-family: arial
+}
+
+.deen2 h3{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: 100;
+	color:#A9A9A9
+}
+
+
+
+
+
+
+
+
+
+
+.team{
+	overflow: hidden;
+	text-align: center;
+	padding: 50px;
+	border-bottom: 3px solid #f1f1f1;
+}
+
+.team a{
+	color: black;
+}
+
+.team a:hover{
+	color: #3487E6;
+}
+
+.border{
+	display: block;
+	margin: auto;
+	width: 160px;
+	height: 3px;
+	margin-bottom: 40px;
+}
+.team a img{
+	width: 100%;
+	filter: grayscale(100%);
+	transition: 0.4s all;
+
+}
+
+.team #img3{
+	display: inline-block;
+	margin: 0 30px;
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	border-radius: 50%;
+
+}
+.team a:hover > img{
+	filter: none;
+
+}
+
+.team p{
+	font-family: arial;
+	font-size: 30px;
+	margin-bottom: 5px;
+}
+
+.team h3{
+	font-family: arial;
+	font-size: 20px;
+	font-weight: 100;
+	color:#A9A9A9	
+}
+
+

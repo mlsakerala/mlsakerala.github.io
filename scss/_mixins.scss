@@ -1,0 +1,35 @@
+// Variables
+$orange: #bc8542;
+$teal: #4892b5;
+$green: #7c8b78;
+$purple: #bb4b79;
+$tan: #EEE9E9;
+$blue: #2b4f71;
+
+// Hover
+@mixin hover {
+	opacity: 1;
+	&:hover, &:active, &:focus {
+		opacity: 0.75;
+	}
+}
+
+// Grid - This works best with percentages used for the width and margins.
+@mixin grid {
+	width: 23%;
+	margin: 1%;
+	float: left;
+	transition: all, 0.3s, ease;
+	@media (max-width: 1024px) {
+		width: 31.333%;
+	}
+	@media (max-width: 768px) {
+		width: 48%;
+	}
+	@media (max-width: 480px) {
+		display: block;
+		width: 96%;
+		margin: 2%;
+		float: none;
+	}
+}

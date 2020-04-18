@@ -1,0 +1,314 @@
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* Body Styles
+*********************************************
+*/
+* {
+  box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+p,
+ol {
+  width: 70%;
+  margin: 2.5% auto;
+  padding-left: 20px;
+  @media (max-width: 1024px) {
+    width: 90%;
+  }
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+ul li,
+ol li {
+  margin: 20px 0;
+}
+p, ul {
+  padding-left: 0;
+}
+
+/* Typography
+***********************************************
+*/
+header {
+  margin-bottom: 5%;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+  }
+  @media (max-width: 480px) {
+    font-size: 28px;
+  }
+}
+h2 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 15px 8px;
+  margin: 0;
+  white-space: nowrap;
+  @media (max-width: 1200px) {
+    font-size: 15px;
+  }
+}
+pre, code {
+  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  font-size: 16px;
+  line-height: 2;
+  overflow: auto;
+  width: 75%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 10px;
+  @media (max-width: 1024px) {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+code {
+  padding: 5px;
+  vertical-align: 3px;
+  white-space: nowrap;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: dotted 2px #fff;
+  &:hover, &:active, &:focus {
+    color: #fff;
+    border-bottom: solid 2px #fff;
+  }
+}
+
+/* Sections
+**********************************************
+*/
+section {
+  padding: 10% 5%;
+  width: 100%;
+}
+/* First Section */
+.first {
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  background-size: cover;
+  p {
+    width: 50%;
+    margin: 10% auto;
+    text-align: center;
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+}
+.buttons {
+  list-style-type: none;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 25px;
+    padding: 0;
+    @media (max-width: 768px) {
+      display: block;
+      margin: 50px auto 0;
+    }
+    a {
+      font-size: 30px;
+      color: #fff;
+      padding: 20px;
+      background: $orange;
+      border: 2px solid $orange;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: all, 0.3s, ease;
+      @media (max-width: 1024px) {
+        padding: 15px;
+        font-size: 22px;
+      }
+      &:hover, &:active, &:focus {
+        background: none;
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
+/* Second Section */
+.second {
+  background: $tan;
+  h1 {
+    color: #555;
+  }
+}
+/* Third Section */
+.third {
+  background: $green;
+  pre, code {
+    color: darken($green,40%);
+    text-shadow: 0 1px 0 $green;
+    background: darken($green,7.5%);
+  }
+}
+/* Fourth Section */
+.fourth {
+  background: $orange;
+  pre, code {
+    color: darken($orange,40%);
+    text-shadow: 0 1px 0 $orange;
+    background: darken($orange,7.5%);
+  }
+}
+/* Fifth Section */
+.fifth {
+  background: $teal;
+  pre, code {
+    color: darken($teal,40%);
+    text-shadow: 0 1px 0 $teal;
+    background: darken($teal,7.5%);
+  }
+}
+/* Sixth Section */
+.sixth {
+  background: $purple;
+  pre, code {
+    color: darken($purple,40%);
+    text-shadow: 0 1px 0 $purple;
+    background: darken($purple,7.5%);
+  }
+}
+
+/* Video Gallery
+********************************************
+*/
+.video {
+  background: #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.15);
+  @include grid;
+  figure {
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+    a {
+    	display: block;
+    	margin: 0;
+    	padding: 0;
+    	border: none;
+    	line-height: 0;
+    }
+  }
+  img {
+    width: 100%;
+    @include hover;
+  }
+}
+
+/* Images 
+********************************************
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Clearfix 
+********************************************
+*/
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer 
+********************************************
+*/
+footer {
+  clear: both;
+  background: $blue;
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+}
+
+/* Smooth Scrolling Back to Top
+********************************************
+*/
+.scroll-top:hover {
+  color: #fff !important;
+  background-color: #333;
+  text-decoration: none;
+  border-bottom: none;
+}
+ 
+.scroll-top {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  line-height: 2;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  text-decoration: none;
+  border-radius: 5px;
+  border-bottom: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Remove border from Francybox close
+*****************************************
+*/
+.fancybox-close {
+  border-bottom: none;
+  &:hover, &:active, &:focus {
+    border-bottom: none;
+  }
+}
